@@ -30,13 +30,30 @@ function strokeStyle(style)
 ctx.strokeStyle = style;
 }
 
+//setting up fill color
+function fillStyle(style)
+{
+ctx.fillStyle = style;
+}
+
 //drawing line
 function line(x,y,x2,y2)
 {
 ctx.beginPath();
 ctx.moveTo(x, y);
 ctx.lineTo(x2,y2);
-ctx.stroke();
+}
+
+//allows stroke
+function stroke()
+{
+	ctx.stroke();
+}
+
+//allows fill
+function fill()
+{
+	ctx.fill();
 }
 
 //drawing circle
@@ -44,7 +61,6 @@ function circle(x,y,r)
 {
 ctx.beginPath();
 ctx.arc(x,y,r,0,2*Math.PI);
-ctx.stroke();
 }
 
 //sets origin of the drawing
@@ -57,3 +73,4 @@ function sin(x)
 {
 return Math.sin(x*3.14/180);
 }
+
