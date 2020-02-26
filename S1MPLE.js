@@ -74,3 +74,8 @@ function sin(x)
 return Math.sin(x*3.14/180);
 }
 
+function cos(x)
+{
+return Math.cos(x*3.14/180);
+}
+
